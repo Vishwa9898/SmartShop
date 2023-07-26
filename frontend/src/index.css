@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+:root {
+	--primary-color: rgb(10, 54, 148);
+	--primary-color-dark: #1B065E;
+	--secondary-color: #4DCCBD;
+	/* --background-color:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/7oH0RTX.png"); */
+
+	--secondary-color-dark: #ed4548;
+	--font-primary: 'Quicksand', sans-serif;
+
+	--font-logo: 'Dancing Script', cursive;
+}
+html {
+	/* font-size: 62.5%; */
+	background: var(--background-color);
+  background-size: cover;
+  background-position: center;
+}
+body {
+	min-height: 100vh;
+	height: 100%;
+}
+label {
+	display: block;
+	height: 100%;
+	width: 100%;
+}

@@ -1,0 +1,145 @@
+.register {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&--container {
+		nav {
+			margin-bottom: 6.25rem;
+			width: max-content;
+		}
+	}
+	&-box {
+		padding: 1.25rem;
+		padding-bottom: 1.25rem;
+		background-color: #fff;
+		border-radius: 0.625rem;
+		gap: 1.42rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 31.75rem;
+		width: 100%;
+	}
+	&--error {
+		color: red;
+		font-size: 0.875rem;
+		margin: 0.125rem 0;
+		text-align: center;
+	}
+	
+	&--showPassword {
+		text-align: end;
+		color: var(--primary-color);
+		font-size: 0.8125rem;
+		margin-bottom: 0.0625rem;
+		cursor: pointer;
+		position: relative;
+		height: 1.25rem;
+		width: 100%;
+		& span:hover,
+		& span:focus {
+			outline: none;
+			color: var(--primary-color-dark);
+			text-decoration: underline;
+		}
+		&--container {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	
+
+	&--form {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+	}
+	[name='email'] {
+		margin-bottom: .625rem;
+	}
+	.login--input {
+		margin: 0;
+		margin-top: 0.125rem;
+	}
+	&--input {
+		padding: .625rem;
+		max-width: 29.125rem;
+		margin-bottom:0.88rem;
+		width: 100%;
+		font-size: 1.25rem;
+		border-radius: .625rem;
+		border: 1px solid #000;
+		background: linear-gradient(#fff 0 0) padding-box,
+			linear-gradient(to right, var(--primary-color), var(--secondary-color))
+				border-box;
+		transition: all 0.2s ease;
+
+		&:focus {
+			outline: none;
+			border: 1px solid transparent;
+		}
+	}
+	&--submit {
+		padding: .625rem;
+		background-color: var(--primary-color) !important;
+		font-size: 1.4375rem;
+		display: flex;
+		justify-content: center;
+		height: 3.125rem;
+		align-items: center;
+		position: relative;
+		color: #fff;
+        margin-top: .625rem;
+		border: none;
+		border-radius: .625rem;
+		cursor: pointer;
+		transition: all 0.2s ease;
+		&:hover,
+		&:focus {
+			outline: none;
+			background: var(--primary-color-dark) !important;
+		}
+	}
+	&--link {
+		font-size: 1rem;
+		color: #000;
+
+		a {
+			color: var(--primary-color);
+			text-decoration: none;
+			transition: all 0.2s ease;
+			&:hover {
+				outline: none;
+				background: linear-gradient(
+					to right,
+					var(--primary-color),
+					var(--secondary-color)
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+	&--info {
+		font-size: 1.2rem;
+		color: #000;
+		a {
+			color: var(--primary-color);
+			text-decoration: none;
+			transition: all 0.2s ease;
+			&:hover,
+			&:focus {
+				outline: none;
+				background: linear-gradient(
+					to right,
+					var(--primary-color),
+					var(--secondary-color)
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
